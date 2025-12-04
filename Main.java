@@ -15,40 +15,38 @@
          System.out.println("You reach the Nternational Space Station (ISS).");
        }
        else if ( command.equals("n") ) {
-         System.out.println("You go to the Moon" );
-         System.out.println("Around the sun");
-       }
+        System.out.println("You are on the Moon");
+        System.out.println("Or you want to go around the sun");
+        command = getCommand("Wanna go to Mars and be the first human on the Mars? (w/s)");
+        if ( command.equals ("s") ) {
+          System.out.println("Wanna go on the moon of Mars and put your're flag on the moon");
 
-       command = getCommand("Wanna go to Mars and be the first human on the Mars? (w/s)");
-       if ( command.equals ("s") ) {
-        System.out.println("Wanna go to the moon of Mars and put your're flag on the moon");
-       }
-       else if ( command.equals ("w")) {
-        System.out.println("Wanna go and sleep for one night on the Saturn Rings!");
-       }
+              command = getCommand ("Would you want to go (n/s)" );
+          if ( command.equals("n") ) {
+            System.out.println("Wanna to go inside a small black hole to see wants there");
+          }
+          else if ( command.equals ("s") ) {
+            System.out.println("want to go on a exo-plant and see if there is life and other living things |Yes, No| ");
 
-       command = getCommand ("Would you want to go (n/s)" );
-       if ( command.equals("n") ) {
-        System.out.println("Wanna to go inside a small black hole to see wants there, you will make it 
-        alive");
-       }
-       else if ( command.equals ("s") ) {
-        System.out.println("want to go on a exo-plant and see if there is life and other living things |Yes, No| ");
-       }
+            command = getCommand("Wanna to meet aliens and talk to them (n/w)");
+          if ( command.equals ("n")){
+            System.out.println("Youn meet aliens wanna party with them all night");
+          } 
+          else if ( command.equals("w") ){
+            System.out.println("");
+          }
+          }
+          
 
-       command = getCommand("Wanna to meet aliens and talk to them (n/w)");
-       if ( command.equals ("n")){
-        System.out.println("If you meet aliens would want to party with them all night");
-       } 
-       else if ( command.equals("w") ){
-        System.out.println(";");
+        }
+        else if ( command.equals ("w")) {
+          System.out.println("Wanna sleep for one night on the Saturn Rings!");
+        }
        }
 
        else {
          System.out.println("GAME OVER! START OVER");
        }
-
-
       
 
           
